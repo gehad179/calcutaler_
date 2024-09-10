@@ -1,0 +1,318 @@
+body{
+    background-color: black;
+    color: #cb36cb;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+header{
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    padding: 0 0 ;
+}
+header img{
+    width: 4%;
+    height: 60%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+header h1{
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 20px;
+    letter-spacing:7px;
+    background: transparent;
+    text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.9),
+    0px 0px 20px rgba(255, 255, 255, 0.7); 
+}
+header div {
+    width: 70%;
+    display: flex;
+    align-items: center; 
+}
+header .conta{
+    overflow: hidden;
+    display: flex; 
+    align-items: center; 
+    direction: rtl; 
+    position: relative;
+    right: 25px;
+}
+header .conta img {
+    width: 30px; 
+    height: auto;
+    margin-left: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 10s ease;
+}
+header .conta h2:hover ~ a img {
+    opacity: 1; 
+    visibility: visible; 
+}
+nav{
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    height: 30px;
+    overflow: hidden;
+}
+nav span {
+    text-transform: uppercase;
+    position: relative;
+    animation-duration: 15s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); 
+    animation-fill-mode: backwards; 
+    visibility: hidden;
+    text-shadow: 3px 3px 5px rgba(11, 113, 113, 0.7);
+
+}
+
+nav span:nth-child(1) {
+    animation-delay: 2.4s;
+}
+
+nav span:nth-child(2) {
+    animation-delay: 2.2s;
+}
+
+nav span:nth-child(3) {
+    animation-delay: 2s;
+}
+
+nav span:nth-child(4) {
+    animation-delay: 1.8s;
+}
+
+nav span:nth-child(5) {
+    animation-delay: 1.6s; 
+}
+
+nav span:nth-child(6) {
+    animation-delay: 1.4s; 
+}
+
+nav span:nth-child(7) {
+    animation-delay: 1.2s; 
+}
+
+nav span:nth-child(8) {
+    animation-delay: 1s;  
+}
+
+nav span:nth-child(9) {
+    animation-delay: 0.8s; 
+}
+
+nav span:nth-child(10) {
+    animation-delay: 0.6s; 
+}
+
+nav span:nth-child(11) {
+    animation-delay: 0.4s;
+}
+
+nav span:nth-child(12) {
+    animation-delay: 0.2s;
+}
+
+nav span:nth-child(13) {
+    animation-delay: 0s; 
+}
+
+nav span:nth-child(14) {
+    animation-delay: -0.2s; 
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0vw); 
+        visibility: visible;
+    }
+    50% {
+        transform: translateX(50vw); 
+
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+section {
+    display: flex;
+    justify-content: space-between; 
+    margin: 0;
+    padding: 0;
+    height:620px; 
+}
+
+main {
+    width: 70%; 
+    background-color: black;
+    padding:3px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-row: 50px , 50px;
+}
+main button {
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    font-size:x-large;
+    border-radius: 7%;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.7);
+    animation-iteration-count: infinite;
+    animation: pump 2s infinite;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    color: #cb36cb ;
+    
+}
+main button:hover {
+    font-weight: bolder;
+    box-shadow: 0px 0px 0 rgba(0, 0, 0, 0.7);
+    animation-iteration-count: infinite;
+    animation:none;
+    border: 1px solid #ccc; 
+    overflow: hidden;
+    
+}
+
+@keyframes pump {
+    0% {
+        border-color: #f0f0f0;
+    }
+    50% {
+        border-color: #cb36cb;
+    }
+    100% {
+        border-color: #f0f0f0;
+    }
+}
+
+
+main button:last-child {
+    grid-column: span 2; /* آخر عنصر يشغل عمودين */
+}
+
+sup , sup
+{
+    font-size: smaller;
+}
+aside {
+    width: 30%; 
+    background-color: black;
+    color:#320d32 ;
+    padding: 20px ;
+    box-sizing: border-box;
+}
+.ans{
+    height: 25%;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10%;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.delandon{
+    height: 20%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap:10px;
+}
+.delandon div{
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    font-size:x-large;
+    border: 1px solid #ccc;
+}
+.delandon button {
+    border-radius: 20%; 
+    border: 2px solid #cb36cb;
+    outline: none;
+    background-color: #32042b;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px; 
+    font-size: large; 
+    cursor: pointer; 
+    animation-iteration-count: infinite;
+    animation: pump 2s infinite;
+    border: 1px solid #ccc; 
+    position: relative;
+    overflow: hidden; 
+    color: white;
+}
+
+.delandon button:hover {
+    background-color: #611b61b9;
+    color: white;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.9);
+}
+
+.Previous{
+        background-color: white;
+        height: 48%;
+        border-radius: 10%;
+}
+.Previous h3{
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    height: 10%;
+}
+.Previous h3::after {
+    content: '';
+    display: block;
+    width: 75%;
+    height: 2px;
+    background: black; 
+    position: absolute;
+    left:12.5%;
+    bottom: 0;
+}
+.PreviousANS{
+    height: 60%;
+    background-color: white;
+    font-size: xx-large;
+    margin-top: 2px;
+    margin: 2px;
+    overflow:auto;
+}
+
+footer{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 20px;
+    letter-spacing:7px;
+    background: transparent;
+    text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.9),
+    0px 0px 20px rgba(255, 255, 255, 0.7)
+}
